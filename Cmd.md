@@ -20,3 +20,8 @@ cmd para ver pacotes instalados
 pip freeze.
 
 --------------------------------
+cmd para logar no git 
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+
+------------------------------------------------------
