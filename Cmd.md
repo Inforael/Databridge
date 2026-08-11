@@ -17,6 +17,6 @@ python -m pip install pygame-ce
 
 ---------------------------------
 cmd para ver pacotes instalados 
-pip freeze
+pip freeze.
 
 --------------------------------
