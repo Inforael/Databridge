@@ -9,7 +9,7 @@ tela = pygame.display.set_mode(tamanho_tela)
 pygame.display.set_caption("Jogo Pegar Bolas")
 
 tamanho_bola = 15
-bola = pygame.rect(100, 500, tamanho_bola, tamanho_bola)
+bola = pygame.Rect(100, 500, tamanho_bola, tamanho_bola)
 tamanho_jogador = 100
 jogador = pygame.rect(0, 750, tamanho_jogador, 15)
 
@@ -23,13 +23,22 @@ def criar_blocos():
     return blocos
 
 cores = {"branca": (255, 0, 0), 
-         1: (0, 255, 0), 
-         2: (0, 0, 255),
-         3: (0, 0, 255),
-         4: (0, 0, 255),
-         5: (0, 0, 255),
-         6: (0, 0, 255),
+         "preta": (0, 255, 0), 
+         "amarela": (0, 0, 255),
+         "azul": (0, 0, 255),
+         "verde": (0, 0, 255),
          }
+
+fim_jogo = False
+pontuacao = 0
+movimento_bola = [1, 1]
+
+tela.fill(cores["preta"])
+
+while not fim_jogo:
+    for evento in pygame.event.get():
+        if evento.type == pygame.QUIT:
+            fim_jogo = True
 
 
 
