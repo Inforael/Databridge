@@ -8,7 +8,9 @@ tamanho_tela = (600, 600)
 tela = pygame.display.set_mode(tamanho_tela)
 pygame.display.set_caption("Jogo Pegar Bolas")
 
+
 tamanho_bola = 15
+
 bola = pygame.Rect(100, 500, tamanho_bola, tamanho_bola)
 tamanho_jogador = 100
 jogador = pygame.Rect(0, 750, tamanho_jogador, 15)
